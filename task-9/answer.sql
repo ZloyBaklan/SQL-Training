@@ -1,7 +1,7 @@
 SELECT DISTINCT surname FROM cd.members ORDER BY surname LIMIT 10;
 
 '''
-There's three new concepts here, but they're all pretty simple.
+There is three new concepts here, but they are all pretty simple.
 
 Specifying DISTINCT after SELECT removes duplicate rows from the result set. 
 Note that this applies to rows: if row A has multiple columns, 
