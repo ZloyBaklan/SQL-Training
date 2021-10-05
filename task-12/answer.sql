@@ -21,7 +21,7 @@ In this case, we use it to complete the WHERE clause of a query to find a given 
 Unfortunately, this doesnt work. 
 The MAX function doesn not restrict rows like the WHERE clause does - it simply takes in a bunch of values and returns the biggest one. 
 The database is then left wondering how to pair up a long list of names with the single join date that is come out of the max function, and fails. 
-Instead, you are left having to say find me the row(s) which have a join date that's the same as the maximum join date.
+Instead, you are left having to say find me the row(s) which have a join date that is the same as the maximum join date.
 
 As mentioned by the hint, there is other ways to get this job done - one example is below. 
 In this approach, rather than explicitly finding out what the last joined date is, we simply order our members table in descending order of join date, 
