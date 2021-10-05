@@ -16,6 +16,6 @@ but you can put anything in here that will produce a single result per returned 
 The second new concept is the CASE statement itself. CASE is effectively like if/switch statements in other languages,
 with a form as shown in the query. To add a middling option, we would simply insert another when...then section.
 
-Finally, there's the AS operator. This is simply used to label columns or expressions, 
+Finally, theres the AS operator. This is simply used to label columns or expressions, 
 to make them display more nicely or to make them easier to reference when used as part of a subquery.
 '''
