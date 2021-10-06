@@ -18,4 +18,18 @@ and focus on what the FROM statement produces.
 In all our previous examples, FROM has just been a simple table. 
 What is it now? Another table! 
 This time, it is produced as a composite of bookings and members.
+
+For each member in the members table, the join has found all the matching member ids in the bookings table. 
+For each match, it is then produced a row combining the row from the members table, and the row from the bookings table.
+
+Obviously, this is too much information on its own, 
+and any useful question will want to filter it down. 
+In our query, we use the start of the SELECT clause to pick columns, and the WHERE clause to pick rows.
+
+That is all we need to find Davids bookings! In general, I encourage you to remember that the output of the FROM clause is essentially 
+one big table that you then filter information out of. This may sound inefficient - but do not worry, 
+under the covers the DB will be behaving much more intelligently.
+
+One final note: there is two different syntaxes for inner joins. Ive shown you the one I prefer, 
+that I find more consistent with other join types.
 '''
