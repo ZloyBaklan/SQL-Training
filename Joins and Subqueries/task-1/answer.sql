@@ -2,6 +2,10 @@ SELECT book.starttime FROM cd.bookings book
 INNER JOIN cd.members members ON members.memid = book.memid
 WHERE members.firstname='David' AND members.surname='Farrell';
 
+# Variant 2
+
+SELECT book.starttime FROM cd.bookings book, cd.members members
+WHERE members.firstname='David' AND members.surname='Farrell' AND members.memid = book.memid;
 '''
 The most commonly used kind of join is the INNER JOIN. 
 What this does is combine two tables based on a join expression - in this case, 
